@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="Uhrzeit-Datum.js"></script>
 </head>
 <body class="panel-sidebar">
- <div class="sidebar">
-    <h2>GamePanel</h2>
-    <ul>
-        <li>Dashboard</li>
-        <li>Server</li>
-        <li>Spieler</li>
-        <li>Logs</li>
-        <li>Backups</li>
-        <li>Plugins</li>
-        <li>Benutzerverwaltung</li>
-        <li>Hosts</li>
-        <li>Einstellungen</li>
-    </ul>
-</div>
+    <div class="sidebar">
+        <h2>GamePanel</h2>
+        <ul>
+            <li onclick="window.location.href='panel.html'">Dashboard</li>
+            <li onclick="window.location.href='panel.html'">Server</li>
+            <li onclick="window.location.href='panel.html'">Spieler</li>
+            <li onclick="window.location.href='panel.html'">Logs</li>
+            <li onclick="window.location.href='panel.html'">Backups</li>
+            <li onclick="window.location.href='panel.html'">Plugins</li>
+            <li onclick="window.location.href='panel.html'">Benutzerverwaltung</li>
+            <li onclick="window.location.href='hosts.html'">Hosts</li>
+            <li class="active">Einstellungen</li>
+        </ul>
+    </div>
+
 
 <div class="main">
 
@@ -31,8 +33,8 @@
 
     <div class="cards">
         <div class="card">
-            <h3>Panel</h3>
-            <span>Aktiv</span>
+            <h3>Time</h3>
+            <span><time id="current-time"></span>
         </div>
 
         <div class="card">

@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <title>Game Panel</title>
 <link rel="stylesheet" href="styles.css">
+<body class="login-page">
 </head>
-<body>
 <div class="header">Game Panel</div>
+
 <div class="login-container">
-<h2>Log In</h2>
-<input type="text" placeholder="Username" id="username">
-<input type="password" placeholder="Password" id="password">
-<button onclick="login()">Login</button>
+    <h2>Log In</h2>
+    <input type="text" placeholder="Username" id="username">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="login()">Login</button>
 </div>
+</body>
 
 <script>
 function login() {
@@ -35,5 +37,4 @@ function login() {
     .catch(err => alert('Fehler: ' + err.message));
 }
 </script>
-</body>
 </html>

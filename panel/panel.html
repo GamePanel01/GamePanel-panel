@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts-panel.js"></script>
 </head>
 <body class="panel-sidebar">
- <div class="sidebar">
-    <h2>GamePanel</h2>
-    <ul>
-        <li>Dashboard</li>
-        <li>Server</li>
-        <li>Spieler</li>
-        <li>Logs</li>
-        <li>Backups</li>
-        <li>Plugins</li>
-        <li>Benutzerverwaltung</li>
-        <li>Hosts</li>
-        <li>Einstellungen</li>
-    </ul>
-</div>
+    <div class="sidebar">
+        <h2>GamePanel</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li onclick="window.location.href='panel.html'">Server</li>
+            <li onclick="window.location.href='panel.html'">Spieler</li>
+            <li onclick="window.location.href='panel.html'">Logs</li>
+            <li onclick="window.location.href='panel.html'">Backups</li>
+            <li onclick="window.location.href='panel.html'">Plugins</li>
+            <li onclick="window.location.href='panel.html'">Benutzerverwaltung</li>
+            <li onclick="window.location.href='hosts.html'">Hosts</li>
+            <li onclick="window.location.href='settings.html'">Einstellungen</li>
+        </ul>
+    </div>
 
 <div class="main">
 
