@@ -179,3 +179,27 @@ td {
     text-align: left;
 }
 
+.chart input,
+.chart select,
+.logs input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.chart button,
+.logs button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #6a11cb, #fcb825);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chart button:hover,
+.logs button:hover {
+    opacity: 0.9;
+}

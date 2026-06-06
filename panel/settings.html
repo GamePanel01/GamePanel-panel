@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="panel-sidebar">
+ <div class="sidebar">
+    <h2>GamePanel</h2>
+    <ul>
+        <li>Dashboard</li>
+        <li>Server</li>
+        <li>Spieler</li>
+        <li>Logs</li>
+        <li>Backups</li>
+        <li>Plugins</li>
+        <li>Benutzerverwaltung</li>
+        <li>Hosts</li>
+        <li>Einstellungen</li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+        <input type="text" placeholder="Suchen...">
+        <div class="user">Admin</div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Panel</h3>
+            <span>Aktiv</span>
+        </div>
+
+        <div class="card">
+            <h3>Backups</h3>
+            <span>Täglich</span>
+        </div>
+
+        <div class="card">
+            <h3>Sprache</h3>
+            <span>DE</span>
+        </div>
+
+        <div class="card">
+            <h3>2FA</h3>
+            <span class="green">Ein</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="chart">
+            <h2>Einstellungen</h2>
+            <br>
+
+            <table>
+                <tr>
+                    <td>Panel-Name</td>
+                    <td>
+                        <input type="text" value="GamePanel">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Sprache</td>
+                    <td>
+                        <select>
+                            <option selected>Deutsch</option>
+                            <option>English</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E-Mail Benachrichtigungen</td>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Dark Mode</td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Auto-Save Intervall</td>
+                    <td>
+                        <input type="number" value="15">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <button>Speichern</button>
+        </div>
+
+        <div class="logs">
+            <h2>Sicherheit</h2>
+            <br>
+
+            <table>
+                <tr>
+                    <td>Neues Passwort</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Neues Passwort">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Passwort bestätigen</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Passwort wiederholen">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" checked>
+                            Zwei-Faktor-Authentifizierung
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <button>Passwort ändern</button>
+        </div>
+
+    </div>
+
+</div>
