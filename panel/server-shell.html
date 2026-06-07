@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="panel-sidebar">
+    <div class="sidebar">
+        <h2>GamePanel</h2>
+        <ul>
+            <li onclick="window.location.href='panel.html'">Dashboard</li>
+            <li onclick="window.location.href='server.html'">Server</li>
+            <li onclick="window.location.href='panel.html'">Spieler</li>
+            <li class="active">Server-Shell</li>
+            <li onclick="window.location.href='host-shell.html'">Host-Shell</li>
+            <li onclick="window.location.href='backup.html'">Backups</li>
+            <li onclick="window.location.href='panel.html'">Benutzerverwaltung</li>
+            <li onclick="window.location.href='hosts.html'">Hosts</li>
+            <li onclick="window.location.href='settings.html'">Einstellungen</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <input type="text" placeholder="Suchen..." disabled>
+            <div class="user">Admin</div>
+        </div>
+
+        <div class="content">
+            <div class="chart">
+                <h2>Server-Shell</h2>
+                <p>Hier kannst du Befehle direkt an den Server senden und die Ausgabe in Echtzeit sehen.</p>
+                <p>Wählen sie ihren Server aus:</p>
+                <select id="select-server">
+                    <option value="">-- Server auswählen --</option>
+                </select>
+                <br><br>
+                <div class="server-shell">
+                    <div id="shell-output" class="shell-output"></div>
+                    <input type="text" id="shell-input" placeholder="Befehl eingeben...">
+                    <button id="send-command-button">Senden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

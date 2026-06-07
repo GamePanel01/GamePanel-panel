@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/add-server.js" defer></script>
+    <script src="js/scripts-add-hosts.js" defer></script>
+</head>
+<body class="panel-sidebar">
+    <div class="sidebar">
+        <h2>GamePanel</h2>
+        <ul>
+            <li onclick="window.location.href='panel.html'">Dashboard</li>
+            <li class="active">Server</li>
+            <li onclick="window.location.href='server-shell.html'">Server-Shell</li>
+            <li onclick="window.location.href='host-shell.html'">Host-Shell</li>
+            <li onclick="window.location.href='backup.html'">Backups</li>
+            <li onclick="window.location.href='panel.html'">Benutzerverwaltung</li>
+            <li onclick="window.location.href='hosts.html'">Hosts</li>
+            <li onclick="window.location.href='settings.html'">Einstellungen</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <input type="text" placeholder="Suchen..." disabled>
+            <div class="user">Admin</div>
+        </div>
+
+        <div class="content Server-content">
+            <div class="chart Server-form-card">
+                <h2>Server hinzufügen</h2>
+                <p>Trage die Server-Daten ein, um das Webpanel mit API- und Server-Einstellungen zu speichern.</p>
+                <table>
+                    <tr>
+                        <td>Server-Name</td>
+                        <td><input type="text" id="input-server-name" placeholder="z. B. Mein Server"></td>
+                    </tr>
+                    <tr>
+                        <td>Host auswählen</td>
+                        <td>
+                            <select id="select-host">
+                                <option value="">-- Host auswählen --</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Server-Pfad</td>
+                        <td><input type="text" id="input-server-path" placeholder="z. B. /home/minecraft/server1"></td>
+                    </tr>
+                    <tr>
+                        <td>Startbefehl</td>
+                        <td><input type="text" id="input-server-start-command" placeholder="z. B. java -Xmx4096M -Xms4096M -jar server.jar nogui"></td>
+                    </tr>
+                </table>
+                <br>
+                <button id="save-server-button">Server speichern</button>
+                <div id="message-box" class="message-box"></div>
+            </div>
+
+            <div class="logs Server-list-card">
+                <h2>Aktuelle Server</h2>
+                <p>Hier werden alle geladenen Server aus der API oder dem lokalen Speicher angezeigt.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Host</th>
+                            <th>Pfad</th>
+                            <th>Startbefehl</th>
+                        </tr>
+                    </thead>
+                    <tbody id="server-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
